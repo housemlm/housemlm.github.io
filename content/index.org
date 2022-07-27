@@ -11,7 +11,10 @@
 + esxi安装到新u盘
 + 用电脑连esxi添加ssd
 + esxi添加openwrt，用电脑
-** IDEA 设计店里布局，家具摆放
+** TODO 设计店里布局，家具摆放 :ATTACH:
+:PROPERTIES:
+:ID:       77d25349-fa30-4fc3-8db9-e7b260e83977
+:END:
 + Note taken on [2022-07-27 Wed 22:01] \\
   ** 设计两套家具摆放布局
   ** 以办公桌挪走为前提
