@@ -14,4 +14,4 @@ DEADLINE: <2022-07-24 Sun 20:00>
 SCHEDULED: <2022-07-22 Fri 14:00> DEADLINE: <2022-07-22 Fri 22:00>
 + esxi安装到新u盘
 + 用电脑连esxi添加ssd
-+ [[file:task.org][esxi添加openwrt，用电脑上传到软路由]]
++ [[file:displaypic.org][esxi添加openwrt，用电脑上传到软路由]]
