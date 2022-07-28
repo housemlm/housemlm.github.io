@@ -1,2 +1,6 @@
 #+title: Displaypic
-https://avatars.githubusercontent.com/u/2937359?v=4
+[[https://avatars.githubusercontent.com/u/2937359?v=4]]
+https://avatars.githubusercontent.com/u/33464477?v='/mnt/c/Users/Administrator/Pictures/Saved Pictures/Salted Chocolate Avocado Truffles - Delight Fuel.jpg'4
+'/mnt/c/Users/Administrator/Pictures/Saved Pictures/Salted Chocolate Avocado Truffles - Delight Fuel.jpg'
+./mnt/c/Users/Administrator/Pictures/3e7e7fd1a755cd576d2b174566b1db5b.jpg
+[[file:/mnt/c/Users/Administrator/Pictures/资源 1.jpg]]
