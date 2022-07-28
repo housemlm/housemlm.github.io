@@ -2,16 +2,24 @@
 
 #+title:House Agenda
 ** TODO 改设计图  1h
-DEADLINE: <2022-07-22 Thu 20:30>
 + 今天必须改出来
 ** TODO 发一篇小红书  0.5h
-DEADLINE: <2022-07-22 Fri 20:00>
 + 软路由相关
 ** TODO 发一篇公众号  2h
-DEADLINE: <2022-07-24 Sun 20:00>
 + 打造家庭咖啡馆
-** TODO 装软路由
-SCHEDULED: <2022-07-22 Fri 14:00> DEADLINE: <2022-07-22 Fri 22:00>
+** DONE 装软路由
 + esxi安装到新u盘
 + 用电脑连esxi添加ssd
+<<<<<<< HEAD
 + [[file:displaypic.org][esxi添加openwrt，用电脑上传到软路由]]
+=======
++ esxi添加openwrt，用电脑
+** TODO 设计店里布局，家具摆放 :ATTACH:
+:PROPERTIES:
+:ID:       77d25349-fa30-4fc3-8db9-e7b260e83977
+:END:
++ Note taken on [2022-07-27 Wed 22:01] \\
+  ** 设计两套家具摆放布局
+  ** 以办公桌挪走为前提
+  ** 我们只利用有限空间来想办法改善环境
+>>>>>>> 676e5538cb91c4f6752a6078978558ddee8ec8a0
