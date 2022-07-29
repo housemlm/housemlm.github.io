@@ -24,10 +24,11 @@
      ; org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />"
       )
 =======
-;(setq org-html-validation-link nil            ;; Don't show validation link
-;      org-html-head-include-scripts nil       ;; Use our own scripts
-;      org-html-head-include-default-style nil ;; Use our own styles
-;      org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+(setq org-html-validation-link nil            ;; Don't show validation link
+      org-html-head-include-scripts nil       ;; Use our own scripts
+      org-html-head-include-default-style nil ;; Use our own styles
+;      org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />"
+      )
 >>>>>>> 718cc394f226feb9d2f01f49e9f30e8684279e5b
 
 ;; Define the publishing project
