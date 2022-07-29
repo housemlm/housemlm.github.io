@@ -1,4 +1,5 @@
-#+title:  task for today
+#+title: Journal
+
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
-nw:
-k
+
+** 心得体会
