@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
+=======
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/readtheorg.setup
+>>>>>>> 718cc394f226feb9d2f01f49e9f30e8684279e5b
 #+title:House Agenda
 ** TODO 改设计图  1h
 + 今天必须改出来
@@ -11,7 +15,7 @@
 + esxi安装到新u盘
 + 用电脑连esxi添加ssd
 <<<<<<< HEAD
-+ [[file:displaypic.org][esxi添加openwrt，用电脑上传到软路由]]
++ esxi添加openwrt，用电脑上传到软路由
 =======
 + esxi添加openwrt，用电脑
 ** TODO 设计店里布局，家具摆放 :ATTACH:
@@ -22,4 +26,3 @@
   ** 设计两套家具摆放布局
   ** 以办公桌挪走为前提
   ** 我们只利用有限空间来想办法改善环境
->>>>>>> 676e5538cb91c4f6752a6078978558ddee8ec8a0

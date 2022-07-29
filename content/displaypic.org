@@ -1,10 +1,16 @@
 #+title: Displaypic
 
 
-h
-#+DOWNLOADED: https://avatars.githubusercontent.com/u/2937359?v=4 @ 2022-07-28 16:59:33
+#+attr_html: :width 200px
 [[file:2022-07-28_16-59-33_2937359.png]]
+<<<<<<< HEAD
 [[https://avatars.githubusercontent.com/u/2937359?v=4]]
 #+attr_html: :width 500px
 [[file:~/Pictures/报销1.png]]
 zz
+=======
+
+#+DOWNLOADED: https://i.pinimg.com/564x/0f/42/bb/0f42bbb1ee50f8d9ee8dd2a27c176a91.jpg @ 2022-07-28 19:57:13
+#+attr_html: :width 200px
+[[file:2022-07-28_19-57-13_0f42bbb1ee50f8d9ee8dd2a27c176a91.jpg]]
+>>>>>>> 718cc394f226feb9d2f01f49e9f30e8684279e5b
