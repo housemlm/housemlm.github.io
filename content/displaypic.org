@@ -2,7 +2,7 @@
 
 
 #+attr_html: :width 200px
-[[file:2022-07-28_16-59-33_2937359.png]]
+[[file:2022-07-28_16-59-33_2937359.png]
 <<<<<<< HEAD
 [[https://avatars.githubusercontent.com/u/2937359?v=4]]
 #+attr_html: :width 500px
