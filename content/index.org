@@ -1,4 +1,4 @@
-
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 #+title:House Agenda
 ** TODO 改设计图  1h
