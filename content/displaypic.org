@@ -1,5 +1,6 @@
 #+title: Displaypic
 
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 #+attr_html: :width 200px
 [[file:2022-07-28_16-59-33_2937359.png]
