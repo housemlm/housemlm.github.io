@@ -1,4 +1,4 @@
-
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 * agenda<2022-07-29 周五>
 #+Title:House Agenda
 ** DONE 改设计图  1h
@@ -16,9 +16,9 @@ SCHEDULED: <2022-07-22 Fri 14:00> DEADLINE: <2022-07-22 Fri 22:00>
 + 用电脑连esxi添加ssd
 + esxi添加openwrt，用电脑上传到软路由
 * 笔记
-** [[org:mysite/content/displaypic.org][今日完成asas
-]]
+** [[file:displaypic.org][今日完成asas]]
+
  Emacs Theme 安装调试
 
 * 链接
-[[org:mysite/content/task.org][my test]]
+[[file:task.org][task]]
