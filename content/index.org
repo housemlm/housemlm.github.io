@@ -2,7 +2,7 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 =======
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/readtheorg.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 >>>>>>> 718cc394f226feb9d2f01f49e9f30e8684279e5b
 #+title:House Agenda
 ** TODO 改设计图  1h
