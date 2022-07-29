@@ -16,7 +16,8 @@ SCHEDULED: <2022-07-22 Fri 14:00> DEADLINE: <2022-07-22 Fri 22:00>
 + 用电脑连esxi添加ssd
 + esxi添加openwrt，用电脑上传到软路由
 * 笔记
-** [[org:mysite/content/displaypic.org][今日完成]]
+** [[org:mysite/content/displaypic.org][今日完成asas
+]]
  Emacs Theme 安装调试
 
 * 链接
