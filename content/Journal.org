@@ -2,4 +2,25 @@
 
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
-** 心得体会
+** 烘豆
+<2022-07-29 Fri>
+ - 埃塞俄比亚 西达摩 圣塔维尼小镇
+   美杜莎 G1 96小时厌氧日晒
+   [波奎特咖啡]
+   2锅
+ - 埃塞俄比亚 古吉 乌拉嘎
+   红毛丹 原生种 日晒处理
+   [印格咖啡]
+   3锅
+
+** 2022-08 August
+
+*** 2022-08-01 Monday
+**** [2022-08-01 Mon 06:56]
+- 今天全市12区核酸
+** [ ] [#A] 把journal写起来，上传github
+DEADLINE: <2022-08-01 Mon 20:00>
+** [ ] [#B] 研究内网穿透（看稚晖君知乎的文章）
+SCHEDULED: <2022-08-01 Mon>
+- Note taken on [2022-08-01 Mon 09:42] \\
+  org-mode看日志学习capture的template
