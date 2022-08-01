@@ -18,9 +18,9 @@
 *** 2022-08-01 Monday
 **** [2022-08-01 Mon 06:56]
 - 今天全市12区核酸
-** [ ] [#A] 把journal写起来，上传github
+** TODO [#A] 把journal写起来，上传github
 DEADLINE: <2022-08-01 Mon 20:00>
-** [ ] [#B] 研究内网穿透（看稚晖君知乎的文章）
+** TODO [#B] 研究内网穿透（看稚晖君知乎的文章）
 SCHEDULED: <2022-08-01 Mon>
 - Note taken on [2022-08-01 Mon 09:42] \\
   org-mode看日志学习capture的template
