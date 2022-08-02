@@ -1,26 +1,128 @@
-#+title: Journal
 
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+* 2022
 
-** 烘豆
-<2022-07-29 Fri>
- - 埃塞俄比亚 西达摩 圣塔维尼小镇
-   美杜莎 G1 96小时厌氧日晒
-   [波奎特咖啡]
-   2锅
- - 埃塞俄比亚 古吉 乌拉嘎
-   红毛丹 原生种 日晒处理
-   [印格咖啡]
-   3锅
+** 2022-07 July
+
+*** 2022-07-29 Friday
+
+**** [2022-07-29 Fri 23:54] 洗完澡了
+
+*** 2022-07-30 Saturday
+**** [2022-07-30 Sat 09:57]
+带豆子两包
+**** 今日org快捷键
+- C-c C-z 加入notes
+- C-c .   加入时间戳（会显示在agenda视图）
+- SPC-u C-c . 加入时间戳（不会显示在agenda视图）
+- C-c C-d  加入deadline
+**** [2022-07-30 Sat 11:03] org-capture 的函数文件
+
+[[file:~/.emacs.d/.local/straight/repos/org/lisp/org-capture.el::setq org-capture-clock-keep (org-capture-get :clock-keep)]]
+**** new way :emacs:
+- Note taken on [2022-07-30 Sat 11:21] \\
+  用journal来作为所有记事的入口
+  想加入todo，就用capture模版
+  想加新笔记 可以直接加入时间戳记录refile(C-c C-W)给journal（注意层级可选） 或用capture模版
 
 ** 2022-08 August
 
 *** 2022-08-01 Monday
-**** [2022-08-01 Mon 06:56]
-- 今天全市12区核酸
-** TODO [#A] 把journal写起来，上传github
-DEADLINE: <2022-08-01 Mon 20:00>
-** TODO [#B] 研究内网穿透（看稚晖君知乎的文章）
-SCHEDULED: <2022-08-01 Mon>
-- Note taken on [2022-08-01 Mon 09:42] \\
-  org-mode看日志学习capture的template
+**** [2022-08-01 Mon 19:59]
+**** DONE org-mode 通过github在多设备间同步 :magit:sync:org:
+CLOSED: [2022-08-02 Tue 20:39] DEADLINE: <2022-08-02 Tue 17:00>
+- Note taken on [2022-08-01 Mon 21:04] \\
+    已完成用magit push新仓库（org）
+    用SPC g g 来查看magit status
+    m表示add相关参数
+    M表示pull相关参数
+    s表示stage
+    c表示commit
+    f表示fetch
+    p表示push，如果仓库与本地内容有偏差，push之前要pull并加参数
+**** DONE 学习org-capture-templates配置，将journal添加时间向下排序（prepend参数为t）
+DEADLINE: <2022-08-02 Tue 17:00>
+- Note taken on [2022-08-02 周二 14:20] \\
+  用帮助文档中org-capture-templates中的customize即可，全图形化界面。
+**** TODO 用org文件制作孩子周岁图片日记
+DEADLINE: <2022-08-05 Fri 21:00>
+**** TODO 发一篇小红书，软路由相关
+DEADLINE: <2022-08-03 Wed 12:00>
+**** [2022-08-01 Mon 15:55] :network:
+- 交换机插1口可能是trunk口，因此无法访问管理地址及配置。
+
+**** [2022-08-01 Mon 06:56] :study:
+- 效率有所提升
+- org记笔记入门了
+**** DONE [#A] 把journal写起来，上传github
+CLOSED: [2022-08-01 Mon 16:28] DEADLINE: <2022-08-01 Mon 20:00>
+**** DONE [#B] 研究内网穿透（看稚晖君知乎的文章） :network:
+CLOSED: [2022-08-01 Mon 16:28] SCHEDULED: <2022-08-01 Mon>
+- Note taken on [2022-08-01 Mon 16:36] \\
+  - tag只能作用在heading级别
+
+*** 2022-08-02 星期二
+
+**** DONE [2022-08-02 周二 10:02] 学习将网页内容一键拷贝到journal :org:capture:
+DEADLINE: <2022-08-02 周二 17:00>
+***** [2022-08-02 周二 10:50]设置doom emacs的server，让org-capture-extension能够运行
+- Note taken on [2022-08-02 周二 10:58] \\
+  org-capture-extension需要调用emacsclientw（server端）
+   如果用的windows操作系统，按找教程来设置环境变量
+   ！都是操作系统的环境变量惹的祸！
+[[https://earvingad.github.io/posts/doom_emacs_windows/][Doom, Emacs & Windows | Nerd things and more...]]
+
+***** [2022-08-02 周二 10:56] 用这个插件就可以实现
+[[https://github.com/sprig/org-capture-extension][sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs]]
+
+***** [2022-08-02 周二 11:00] 通过这个文章学到的网页capture技巧 :skills:org:capture:
+- Note taken on [2022-08-02 周二 11:12] \\
+  * M-h（left） M-l（right）来快速调整标题层级
+[[https://emacs-china.org/t/emacs/10367][至尊 Emacs，捕获所有 - Emacs-general - Emacs China]]
+
+**** [2022-08-02 周二 13:44] :doom:capture:config:
+Doom adds it's own templates. Your template is therefore overwritten when org is started.
+The solution is to add your capture to the list of templates after org loads.
+Put the following in your config.el:
+#+BEGIN_SRC elisp
+(after! org (add-to-list 'org-capture-templates
+             '(("d" "Dream" entry
+               (file+headline +org-capture-todo-file "Dream")
+               "* TODO %?\n :PROPERTIES:\n :CATEGORY: dream\n :END:\n %i\n"
+               :prepend t :kill-buffer t))
+              #+END_SRC
+
+[[https://github.com/doomemacs/doomemacs/issues/1391][[QUESTION] org-capture-templates · Issue #1391 · doomemacs/doomemacs]]
+
+**** [2022-08-02 周二 16:38] :doom:capture:templates:config:
+Doom org-capture-templates configs 几个点
+- %a 代表把所在位置的文件加到capture里面去，形成链接
+- %U 代表在capture中加入日期和时间（%T是timestamp版的）
+只要修改某个template的这两个参数，就可以改变capture显示内容
+
+**** [2022-08-02 Tue 22:20] 软路由配置服务器参考
+
+[[https://zhuanlan.zhihu.com/p/336429888][【保姆级教程】个人深度学习工作站配置指南 - 知乎]]
+
+*** 2022-08-03 Wednesday
+**** [2022-08-03 Wed 06:14]
+***** TODO 咖啡豆检查数量、新豆子发送
+DEADLINE: <2022-08-03 Wed 10:00>
+***** TODO 窗贴约时间
+DEADLINE: <2022-08-03 Wed 10:00>
+***** TODO 外卖平台开启检查
+DEADLINE: <2022-08-03 Wed 10:00>
+
+
+**** 数字+vim控制键是常用操作
+- 如3o，在下面加三行并输入
+
+***** TODO 研究笔记布局展示
+- 层级与功能如何分配
+- C-c C-z note 与 capture template的note 两个的使用场景区别
+
+**** git知识 :git:
+如果本地仓库与github上内容有区别造成无法pull（等于fetch+merge），先用git stash来暂存本地版本
+stash之后，pull。之后用stash pop来将暂存版本与现有版本进行合并。
+如果有冲突，再到文件中查找解决。
+最后用git stash drop来把暂存版本删掉。
+注意：如果没有pop成功就drop了，可以用git fsck查找版本，用git show来看具体哪个是删除的版本，查找的是commit类型。
