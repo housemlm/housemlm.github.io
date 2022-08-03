@@ -1,4 +1,4 @@
-
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 * 2022
 
 ** 2022-07 July
@@ -46,7 +46,7 @@ DEADLINE: <2022-08-02 Tue 17:00>
 **** TODO 用org文件制作孩子周岁图片日记
 DEADLINE: <2022-08-05 Fri 21:00>
 **** TODO 发一篇小红书，软路由相关
-DEADLINE: <2022-08-03 Wed 12:00>
+DEADLINE: <2022-08-04 Thu 21:00>
 **** [2022-08-01 Mon 15:55] :network:
 - 交换机插1口可能是trunk口，因此无法访问管理地址及配置。
 
@@ -71,7 +71,7 @@ DEADLINE: <2022-08-02 周二 17:00>
    ！都是操作系统的环境变量惹的祸！
 [[https://earvingad.github.io/posts/doom_emacs_windows/][Doom, Emacs & Windows | Nerd things and more...]]
 
-***** [2022-08-02 周二 10:56] 用这个插件就可以实现
+***** [2022-08-02 周二 10:56] 实现网页capture的插件 :capture:chrome:
 [[https://github.com/sprig/org-capture-extension][sprig/org-capture-extension: A Chrome and firefox extension facilitating org-capture in emacs]]
 
 ***** [2022-08-02 周二 11:00] 通过这个文章学到的网页capture技巧 :skills:org:capture:
@@ -105,20 +105,24 @@ Doom org-capture-templates configs 几个点
 
 *** 2022-08-03 Wednesday
 **** [2022-08-03 Wed 06:14]
-***** TODO 咖啡豆检查数量、新豆子发送
+***** DONE 咖啡豆检查数量、新豆子发送
 DEADLINE: <2022-08-03 Wed 10:00>
-***** TODO 窗贴约时间
+***** DONE 窗贴约时间
 DEADLINE: <2022-08-03 Wed 10:00>
-***** TODO 外卖平台开启检查
+- Note taken on [2022-08-03 周三 09:27] \\
+  明日安装，具体时间待定
+***** DONE 外卖平台开启检查
 DEADLINE: <2022-08-03 Wed 10:00>
 
 
 **** 数字+vim控制键是常用操作
 - 如3o，在下面加三行并输入
 
+
 ***** TODO 研究笔记布局展示
 - 层级与功能如何分配
 - C-c C-z note 与 capture template的note 两个的使用场景区别
+
 
 **** git知识 :git:
 如果本地仓库与github上内容有区别造成无法pull（等于fetch+merge），先用git stash来暂存本地版本
@@ -126,3 +130,49 @@ stash之后，pull。之后用stash pop来将暂存版本与现有版本进行�
 如果有冲突，再到文件中查找解决。
 最后用git stash drop来把暂存版本删掉。
 注意：如果没有pop成功就drop了，可以用git fsck查找版本，用git show来看具体哪个是删除的版本，查找的是commit类型。
+
+
+**** 设置capture显示日期语言为英语
+#+BEGIN_SRC elisp-byte-code
+;; System locale to use for formatting time values.
+(setq system-time-locale "C")         ; Make sure that the weekdays in the
+                           ; time stamps of your Org mode files and
+                            ; in the agenda appear in English.
+
+#+END_SRC
+
+**** 设置另一个capture-template
+- 快捷键 pn
+- 插入到journal下面
+- 不自动插入日期时间
+- 作为note使用
+
+
+**** [2022-08-03 Wed 15:00] 修改org字体、排版间距等 :orgstyle:
+- 模仿typora样式
+
+[[https://qa.1r1g.cn/emacs/ask/3931371/][带有css样式的markdown/org模式文本的实时内联渲染包？ | 智问智答]]
+
+
+**** [2022-08-03 Wed 15:32] 油管emacs视频做的非常好的大牛配置 :config:
+
+[[https://github.com/daviwil/dotfiles/blob/9776d65c4486f2fa08ec60a06e86ecb6d2c40085/Emacs.org#fonts-and-bullets][dotfiles/Emacs.org at 9776d65c4486f2fa08ec60a06e86ecb6d2c40085 · daviwil/dotfiles]]
+
+*** 2022-08-04 Thursday
+**** [2022-08-04 Thu 06:20]
+***** TODO 窗花沟通安装事宜
+<2022-08-04 Thu 09:30>--<2022-08-04 Thu 10:00>
+***** TODO 脑图-下一步咖啡店如何做
+- 研究emacs 脑图实现
+***** TODO 牛奶得定了！
+DEADLINE: <2022-08-04 Thu 09:30>
+***** TODO 洗澡
+<2022-08-04 Thu 20:00>--<2022-08-04 Thu 20:05>
+**** 时间戳使用 :org:timestamp:
+ - C-c . 加入agenda显示的时间戳,在所在时间后面再加入则成为时间段
+ - SPC u C-c . 加入不在agenda显示的时间戳
+ - C-c C-s  加入scheduled时间
+ - C-c C-d  加入deadline时间
+ scheduled 和 deadline 好用但是适合单独使用，因为会在agenda中单独一条显示，如果一个
+ todo既有deadline又有scheduled，则会显示两条这个todo。会影响观感。如果某件事知道要在
+ 特定时间做，并且知道什么时候完成，建议使用时间段的方式。
